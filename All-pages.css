@@ -7,18 +7,18 @@ body.dark-mode {
     color: white;
 }
 
-/* a {
-    color: blue;
+a {
+    color: lightblue;
 }
 
 a:visited {
-    color: purple;
-} */
+    color: pink;
+}
 
-a.dark-mode {
+/* a.dark-mode {
     color: lightblue;
 }
 
 a.dark-mode:visited {
     color: pink;
-}
+} */
