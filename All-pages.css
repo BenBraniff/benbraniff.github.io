@@ -7,6 +7,22 @@ body.dark-mode {
     color: white;
 }
 
+/* Dark mode styles using prefers-color-scheme */
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        a {
+            color: lightblue;  /* Unvisited links in dark mode */
+        }
+
+        a:visited {
+            color: pink;  /* Visited links in dark mode */
+        }
+    }
+
 body a {
     color: blue;
 }
