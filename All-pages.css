@@ -8,11 +8,11 @@ body.dark-mode {
 }
 
 body a {
-    color: blue !important;
+    color: blue;
 }
 
 body a:visited {
-    color: purple !important;
+    color: purple;
 }
 
 body.dark-mode a {
