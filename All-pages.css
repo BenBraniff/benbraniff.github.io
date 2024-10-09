@@ -19,7 +19,7 @@ body.dark-mode {
         }
 
         a:visited {
-            color: pink;  /* Visited links in dark mode */
+            color: lightblue;  /* Visited links in dark mode */
         }
     }
 
@@ -28,7 +28,7 @@ body a {
 }
 
 body a:visited {
-    color: purple;
+    color: blue;
 }
 
 body.dark-mode a {
@@ -36,5 +36,5 @@ body.dark-mode a {
 }
 
 body.dark-mode a:visited {
-    color: pink;
+    color: lightblue;
 }
