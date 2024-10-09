@@ -15,10 +15,10 @@ a:visited {
     color: pink;
 }
 
-a.dark-mode {
+body.dark-mode a {
     color: lightblue;
 }
 
-a.dark-mode:visited {
+body.dark-mode a:visited {
     color: pink;
 }
