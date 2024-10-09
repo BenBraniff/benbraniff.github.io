@@ -8,20 +8,20 @@ body.dark-mode {
 }
 
 /* Dark mode styles using prefers-color-scheme */
-    @media (prefers-color-scheme: dark) {
-        body {
-            background-color: black;
-            color: white;
-        }
-
-        a {
-            color: lightblue;  /* Unvisited links in dark mode */
-        }
-
-        a:visited {
-            color: lightblue;  /* Visited links in dark mode */
-        }
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
     }
+    
+    a {
+        color: lightblue;  /* Unvisited links in dark mode */
+    }
+    
+    a:visited {
+        color: lightblue;  /* Visited links in dark mode */
+    }
+}
 
 body a {
     color: blue;
