@@ -29,10 +29,16 @@
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 const toggleButton = document.getElementById('toggleDarkMode');
 
-// Apply system preference on load
-if (prefersDarkScheme.matches) {
-    document.body.classList.add('dark-mode');
-}
+// Check if user has manually set a preference
+        let storedTheme = localStorage.getItem('theme');
+
+        if (storedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        } else if (storedTheme === 'light') {
+            document.body.classList.add('light-mode');
+        } else if (prefersDarkScheme.matches) {
+            document.body.classList.add('dark-mode'); // Apply system preference
+        }
 
 // Toggle button to switch between modes
 toggleButton.addEventListener('click', function () {
