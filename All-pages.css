@@ -16,9 +16,9 @@ a:visited {
 }
 
 a.dark-mode {
-    color: light-blue;
+    color: lightblue;
 }
 
-a:visited.dark-mode {
+a.dark-mode:visited {
     color: pink;
 }
