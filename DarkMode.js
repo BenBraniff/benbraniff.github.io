@@ -28,5 +28,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
-// this is a test line to see how the commit works
