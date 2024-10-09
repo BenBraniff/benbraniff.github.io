@@ -7,13 +7,13 @@ body.dark-mode {
     color: white;
 }
 
-/* a {
+body a {
     color: blue;
 }
 
-a:visited {
+body a:visited {
     color: purple;
-} */
+}
 
 body.dark-mode a {
     color: lightblue;
