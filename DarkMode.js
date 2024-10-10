@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    const toggleButton = document.getElementById('toggleDarkMode');
+    const toggleButton = document.getElementById('darkModeToggle');
     let storedTheme = localStorage.getItem('theme');
 
     // Apply the stored theme if it exists
