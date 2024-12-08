@@ -1,28 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
     const toggleButton = document.getElementById('darkModeToggle');
     let storedTheme = localStorage.getItem('theme');
 
-    // Apply the stored theme if it exists
-    if (storedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-    } else if (storedTheme === 'light') {
+    // Apply the stored theme if it exists or default to dark mode
+    if (storedTheme === 'light') {
+        document.body.classList.add('light-mode');
         document.body.classList.remove('dark-mode');
     } else {
-        // No stored theme, use system preference
-        if (prefersDarkScheme.matches) {
-            document.body.classList.add('dark-mode');
-        } else {
-            document.body.classList.remove('dark-mode');
-        }
+        // Default to dark mode if no stored theme or the stored theme is dark
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('light-mode');
     }
 
-    // Toggle button to switch between modes
+    // Toggle button to switch between dark and light modes
     toggleButton.addEventListener('click', function () {
         if (document.body.classList.contains('dark-mode')) {
             document.body.classList.remove('dark-mode');
+            document.body.classList.add('light-mode');
             localStorage.setItem('theme', 'light');
         } else {
+            document.body.classList.remove('light-mode');
             document.body.classList.add('dark-mode');
             localStorage.setItem('theme', 'dark');
         }
