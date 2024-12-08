@@ -6,21 +6,21 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 100px;
 }
 
 p {
-    font-size: 20px;
+    font-size: 40px;
 }
 
 button {
-    font-size: 20px;
+    font-size: 40px;
     border-radius: 5px;
     border-style: none;
 }
 
 a {
-    font-size: 20px;
+    font-size: 40px;
     color: lightblue;  /* Links in dark mode */
 }
 
