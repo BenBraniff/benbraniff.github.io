@@ -58,11 +58,11 @@ body.dark-mode {
 }
 
 body.dark-mode a {
-    color: lightblue;
+    color: aqua;
 }
 
 body.dark-mode a:visited {
-    color: lightblue;
+    color: aqua;
 }
 
 button.dark-mode {
