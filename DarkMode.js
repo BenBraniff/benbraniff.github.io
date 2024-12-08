@@ -11,9 +11,18 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.add('dark-mode');
         document.body.classList.remove('light-mode');
     } else {
-        // Default to dark mode if no stored preference
-        document.body.classList.add('dark-mode');
-        document.body.classList.remove('light-mode');
+        // // Default to dark mode if no stored preference
+        // document.body.classList.add('dark-mode');
+        // document.body.classList.remove('light-mode');
+
+        // No stored preference, follow system preference
+        if (prefersDarkScheme.matches) {
+            document.body.classList.add('dark-mode');
+            document.body.classList.remove('light-mode');
+        } else {
+            document.body.classList.add('light-mode');
+            document.body.classList.remove('dark-mode');
+        }
     }
 
     // Toggle button to switch between dark and light modes
