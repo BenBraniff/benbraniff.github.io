@@ -1,2 +1,4 @@
 # personal_website
-this is supposed to be a github repo turned into a website
+This is supposed to be a github repo turned into a website
+
+npm init react-app my-app1 --template typescript --force 
