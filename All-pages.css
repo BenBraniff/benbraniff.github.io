@@ -5,7 +5,20 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    font-size: 20px;
+}
+
 a {
+    font-size: 20px;
     color: lightblue;  /* Links in dark mode */
 }
 
@@ -27,6 +40,11 @@ body.dark-mode a:visited {
     color: lightblue;
 }
 
+button.dark-mode {
+    color: white;
+    background-color: dimgrey;
+}
+
 /* Light Mode */
 body.light-mode {
     background-color: white;
@@ -39,6 +57,11 @@ body.light-mode a {
 
 body.light-mode a:visited {
     color: blue;
+}
+
+button.dark-mode {
+    color: rgb(58, 58, 58);
+    background-color: lightgrey;
 }
 
 /* Dark mode styles using prefers-color-scheme */
@@ -54,5 +77,10 @@ body.light-mode a:visited {
 
     a:visited {
         color: lightblue;  /* Visited links in dark mode */
+    }
+
+    button {
+        color: rgb(58, 58, 58);
+        background-color: lightgrey;
     }
 }
