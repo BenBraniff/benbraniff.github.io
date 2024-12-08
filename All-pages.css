@@ -1,10 +1,29 @@
+/* Default (Light Mode) */
 body {
     background-color: white;
     color: black;
 }
+
+a {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+/* Dark Mode */
 body.dark-mode {
     background-color: black;
     color: white;
+}
+
+body.dark-mode a {
+    color: lightblue;  /* Links in dark mode */
+}
+
+body.dark-mode a:visited {
+    color: lightblue;  /* Visited links in dark mode */
 }
 
 /* Dark mode styles using prefers-color-scheme */
@@ -13,28 +32,12 @@ body.dark-mode {
         background-color: black;
         color: white;
     }
-    
+
     a {
-        color: lightblue;  /* Unvisited links in dark mode */
+        color: lightblue;  /* Links in dark mode */
     }
-    
+
     a:visited {
         color: lightblue;  /* Visited links in dark mode */
     }
-}
-
-body a {
-    color: blue;
-}
-
-body a:visited {
-    color: blue;
-}
-
-body.dark-mode a {
-    color: lightblue;
-}
-
-body.dark-mode a:visited {
-    color: lightblue;
 }
