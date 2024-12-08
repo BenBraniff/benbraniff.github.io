@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 document.addEventListener('DOMContentLoaded', function () {
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
     const toggleButton = document.getElementById('darkModeToggle');
@@ -51,3 +53,21 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+const navigate = useNavigate();
+  
+const goToHome = () => {
+    navigate('/');
+};
+
+const goToProjects = () => {
+    navigate('/Projects.html');
+};
+
+const goToAbout = () => {
+    navigate('/About.html');
+};
+
+const goToContact = () => {
+    navigate('/Contact.html');
+};
