@@ -63,7 +63,7 @@ body.light-mode a:visited {
 
 button.light-mode {
     color: rgb(58, 58, 58);
-    background-color: lightgrey;
+    background-color: darkgrey;
 }
 
 /* Dark mode styles using prefers-color-scheme */
@@ -79,10 +79,5 @@ button.light-mode {
 
     a:visited {
         color: lightblue;  /* Visited links in dark mode */
-    }
-
-    button {
-        color: white;
-        background-color: dimgrey;
     }
 }
