@@ -22,7 +22,7 @@ button {
 .topbar {
     margin-left: auto;
     margin-right: auto;
-    display: inline;
+    display: inline-block;
 }
 
 .topbar-button {
