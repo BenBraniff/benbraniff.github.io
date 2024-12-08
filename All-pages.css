@@ -44,11 +44,11 @@ td {
 
 a {
     font-size: 40px;
-    color: lightblue;  /* Links in dark mode */
+    color: aqua;  /* Links in dark mode */
 }
 
 a:visited {
-    color: lightblue;  /* Visited links in dark mode */
+    color: aqua;  /* Visited links in dark mode */
 }
 
 /* Dark Mode - Applied by default */
@@ -97,10 +97,10 @@ button.light-mode {
     }
 
     a {
-        color: lightblue;  /* Links in dark mode */
+        color: aqua;  /* Links in dark mode */
     }
 
     a:visited {
-        color: lightblue;  /* Visited links in dark mode */
+        color: aqua; /* Visited links in dark mode */
     }
 }
