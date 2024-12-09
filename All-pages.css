@@ -120,30 +120,3 @@ button.light-mode {
         color: aqua; /* Visited links in dark mode */
     }
 }
-
-/* Apply transitions to all elements with color changes */
-body, a, button {
-    transition: all 0.3s ease;
-}
-
-/* For links and buttons */
-a, button {
-    transition: color 0.3s ease;
-}
-
-img {
-    opacity: 1;
-    transition: opacity .3s ease;
-}
-img.hidden {
-    opacity: 0;
-    transition: opacity .3s ease;
-}
-
-body.dark-mode img {
-    opacity: 1;
-}
-
-body.light-mode img {
-    opacity: 1;
-}
