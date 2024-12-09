@@ -33,11 +33,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to update image sources based on the current theme
     function updateImageSources(mode) {
-        const images = document.querySelectorAll('img');
+        const images = document.querySelectorAll('img[data-key]');
         images.forEach(img => {
-            const key = img.src.match(/\/([^\/]+)\./)?.[1]; // Extracts image key
+            const key = img.getAttribute('data-key'); // Get the key from data-key
             if (imageMappings[key]) {
-                img.src = imageMappings[key][mode];
+                console.log(`Updating ${key} to ${imageMappings[key][mode]}`);
+                img.src = imageMappings[key][mode]; // Update the src based on mode
             }
         });
     }
