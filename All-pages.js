@@ -37,8 +37,16 @@ document.addEventListener('DOMContentLoaded', function () {
         images.forEach(img => {
             const key = img.getAttribute('data-key'); // Get the key from data-key
             if (imageMappings[key]) {
-                // console.log(`Updating ${key}: ${img.src} -> ${imageMappings[key][mode]}`);
-                img.src = imageMappings[key][mode]; // Update the src based on mode
+                // img.src = imageMappings[key][mode]; // Update the src based on mode
+                // Apply fade-out effect
+                img.classList.add('hidden');
+
+                // Wait for the fade-out transition to complete before changing the src
+                setTimeout(() => {
+                    img.src = imageMappings[key][mode];
+                    // Fade-in effect
+                    img.classList.remove('hidden');
+                }, 300); // Match the duration in the CSS transition
             }
         });
     }

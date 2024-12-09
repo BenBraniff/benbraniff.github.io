@@ -130,3 +130,19 @@ body, a, button {
 a, button {
     transition: color 0.3s ease;
 }
+
+img {
+    opacity: 1;
+    transition: opacity 0.3s ease,
+}
+img.hidden {
+    opacity: 0;
+}
+
+body.dark-mode img {
+    opacity: 1; /* Example opacity change for dark mode */
+}
+
+body.light-mode img {
+    opacity: 1;
+}
