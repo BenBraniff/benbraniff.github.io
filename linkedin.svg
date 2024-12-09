@@ -1,6 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" aria-label="LinkedIn" viewBox="0 0 512 512" id="linkedin">
-  <rect width="512" height="512" fill="#0077b5" rx="15%"></rect>
-  <circle cx="142" cy="138" r="37"></circle>
-  <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198"></path>
-  <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"></path>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   enable-background="new 0 0 100 100"
+   viewBox="0 0 100 100"
+   id="x"
+   version="1.1"
+   sodipodi:docname="linkedin.svg"
+   xml:space="preserve"
+   inkscape:export-filename="leetcode-whitebar.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs2" /><sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.36"
+     inkscape:cx="50"
+     inkscape:cy="49.788136"
+     inkscape:window-width="1712"
+     inkscape:window-height="960"
+     inkscape:window-x="0"
+     inkscape:window-y="39"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="x" /><g
+     style="display:inline;fill:#ffffff"
+     id="g11"
+     transform="scale(0.1953125)"
+     inkscape:label="Linkedin"><rect
+       width="512"
+       height="512"
+       fill="#0077b5"
+       rx="15.000001%"
+       id="rect1-9"
+       x="0"
+       y="0" /><circle
+       cx="142"
+       cy="138"
+       r="37"
+       id="circle1" /><path
+       stroke="#ffffff"
+       stroke-width="66"
+       d="M 244,194 V 392 M 142,194 v 198"
+       id="path1-7" /><path
+       d="m 276,282 c 0,-20 13,-40 36,-40 24,0 33,18 33,45 v 105 h 66 V 279 c 0,-61 -32,-89 -76,-89 -34,0 -51,19 -59,32"
+       id="path2-9" /></g></svg>

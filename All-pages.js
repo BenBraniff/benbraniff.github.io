@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Define image mappings
     const imageMappings = {
         github: {
-            dark: 'github-rounded-invert.svg',
-            light: 'github-rounded.svg'
+            dark: 'center-cat-white.svg',
+            light: 'center-cat-black.svg'
         },
         resume: {
-            dark: 'resume-2.svg',
-            light: 'resume-2.svg'
+            dark: 'Resume-white.svg',
+            light: 'Resume-black.svg'
         },
         linkedin: {
             dark: 'linkedin.svg',
@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         leetcode: {
             dark: 'leetcode-whitebar.svg',
-            light: 'leetcode-blackbar.png'
+            light: 'leetcode-blackbar.svg'
         },
         xProfile: {
-            dark: 'x-rounded-invert.svg',
-            light: 'x-rounded.svg'
+            dark: 'center-x-text-white.svg',
+            light: 'center-x-text-black.svg'
         },
         monkeytype: {
             dark: 'monkeytype-cropped.png',
