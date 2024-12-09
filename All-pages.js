@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         images.forEach(img => {
             const key = img.getAttribute('data-key');
             if (imageMappings[key]) {
+                // img.src = imageMappings[key][mode];
                 // Apply fade-out effect
                 img.classList.add('hidden');
                 setTimeout(() => {
