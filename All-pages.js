@@ -3,51 +3,85 @@ document.addEventListener('DOMContentLoaded', function () {
     const toggleButton = document.getElementById('darkModeToggle');
     let storedTheme = localStorage.getItem('theme');
 
-    // Check if the user has a stored theme preference
-    if (storedTheme === 'light') {
-        document.body.classList.add('light-mode');
-        document.body.classList.remove('dark-mode');
-    } else if (storedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-        document.body.classList.remove('light-mode');
-    } else {
-        // // Default to dark mode if no stored preference
-        // document.body.classList.add('dark-mode');
-        // document.body.classList.remove('light-mode');
+    // Define image mappings
+    const imageMappings = {
+        github: {
+            dark: 'github-dark.svg',
+            light: 'github-light.svg'
+        },
+        resume: {
+            dark: 'resume2.svg',
+            light: 'resume2.svg'
+        },
+        linkedin: {
+            dark: 'linkedin.svg',
+            light: 'linkedin.svg'
+        },
+        leetcode: {
+            dark: 'leetcode.svg',
+            light: 'leetcode.svg'
+        },
+        xProfile: {
+            dark: 'x-dark.svg',
+            light: 'x-light.svg'
+        },
+        monkeytype: {
+            dark: 'monkeytype.png',
+            light: 'monkeytype.png'
+        }
+    };
 
-        // No stored preference, follow system preference
-        if (prefersDarkScheme.matches) {
-            document.body.classList.add('dark-mode');
-            document.body.classList.remove('light-mode');
-        } else {
+    // Function to update image sources based on the current theme
+    function updateImageSources(mode) {
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            const key = img.src.match(/\/([^\/]+)\./)?.[1]; // Extracts image key
+            if (imageMappings[key]) {
+                img.src = imageMappings[key][mode];
+            }
+        });
+    }
+
+    // Apply the stored theme or system preference
+    function applyTheme(theme) {
+        if (theme === 'light') {
             document.body.classList.add('light-mode');
             document.body.classList.remove('dark-mode');
+            updateImageSources('light');
+        } else {
+            document.body.classList.add('dark-mode');
+            document.body.classList.remove('light-mode');
+            updateImageSources('dark');
         }
+    }
+
+    // Check if the user has a stored theme preference
+    if (storedTheme === 'light') {
+        applyTheme('light');
+    } else if (storedTheme === 'dark') {
+        applyTheme('dark');
+    } else {
+        // No stored preference, follow system preference
+        const initialTheme = prefersDarkScheme.matches ? 'dark' : 'light';
+        applyTheme(initialTheme);
     }
 
     // Toggle button to switch between dark and light modes
     toggleButton.addEventListener('click', function () {
         if (document.body.classList.contains('dark-mode')) {
-            document.body.classList.remove('dark-mode');
-            document.body.classList.add('light-mode');
+            applyTheme('light');
             localStorage.setItem('theme', 'light');
         } else {
-            document.body.classList.remove('light-mode');
-            document.body.classList.add('dark-mode');
+            applyTheme('dark');
             localStorage.setItem('theme', 'dark');
         }
     });
 
-    // If system preferences change, update the theme accordingly
+    // Update theme if system preferences change and no stored preference exists
     prefersDarkScheme.addEventListener('change', function (e) {
         if (!localStorage.getItem('theme')) {
-            if (e.matches) {
-                document.body.classList.add('dark-mode');
-                document.body.classList.remove('light-mode');
-            } else {
-                document.body.classList.add('light-mode');
-                document.body.classList.remove('dark-mode');
-            }
+            const newTheme = e.matches ? 'dark' : 'light';
+            applyTheme(newTheme);
         }
     });
 });
