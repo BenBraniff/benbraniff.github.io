@@ -40,6 +40,14 @@ td {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: left;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 a {
