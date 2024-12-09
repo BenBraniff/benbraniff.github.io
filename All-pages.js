@@ -10,16 +10,16 @@ document.addEventListener('DOMContentLoaded', function () {
             light: 'github-light.svg'
         },
         resume: {
-            dark: 'resume2.svg',
-            light: 'resume2.svg'
+            dark: 'resume-2.svg',
+            light: 'resume-2.svg'
         },
         linkedin: {
             dark: 'linkedin.svg',
             light: 'linkedin.svg'
         },
         leetcode: {
-            dark: 'leetcode.svg',
-            light: 'leetcode.svg'
+            dark: 'leetcode-dark.svg',
+            light: 'leetcode-light.png'
         },
         xProfile: {
             dark: 'x-dark.svg',
@@ -37,8 +37,11 @@ document.addEventListener('DOMContentLoaded', function () {
         images.forEach(img => {
             const key = img.getAttribute('data-key'); // Get the key from data-key
             if (imageMappings[key]) {
-                console.log(`Updating ${key} to ${imageMappings[key][mode]}`);
+                console.log(`Updating ${key}: ${img.src} -> ${imageMappings[key][mode]}`);
                 img.src = imageMappings[key][mode]; // Update the src based on mode
+            }
+            else {
+                console.error(`No mapping found for key: ${key}`);
             }
         });
     }
