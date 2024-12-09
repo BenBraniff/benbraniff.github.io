@@ -41,14 +41,14 @@ td {
     padding-left: 20px;
     padding-right: 20px;
     text-align: left;
-    vertical-align: center;
+    align-items: center;
+    display: flex;
 }
 
 img {
     height: 50px;
     width: 50px;
     background-color: transparent;
-    border-radius: 10px;
 }
 
 a {
