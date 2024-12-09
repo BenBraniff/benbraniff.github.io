@@ -46,7 +46,7 @@ td {
 img {
     height: 50px;
     width: 50px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 10px;
 }
 
