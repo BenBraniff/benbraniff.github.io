@@ -47,6 +47,10 @@ td a {
     display: flex;
 }
 
+td a img {
+    margin-right: 5px;
+}
+
 img {
     height: 50px;
     width: 50px;
