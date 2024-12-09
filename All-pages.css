@@ -133,7 +133,7 @@ a, button {
 
 img {
     opacity: 1;
-    transition: opacity 2s ease;
+    transition: opacity .3s ease;
 }
 img.hidden {
     opacity: 0;
