@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
             light: 'linkedin.svg'
         },
         leetcode: {
-            dark: 'leetcode-dark.svg',
-            light: 'leetcode-light.png'
+            dark: 'leetcode-whitebar.svg',
+            light: 'leetcode-blackbar.png'
         },
         xProfile: {
             dark: 'x-rounded-invert.svg',
