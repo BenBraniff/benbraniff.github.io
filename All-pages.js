@@ -1,3 +1,5 @@
+#hi
+
 document.addEventListener('DOMContentLoaded', function () {
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
     const toggleButton = document.getElementById('darkModeToggle');
