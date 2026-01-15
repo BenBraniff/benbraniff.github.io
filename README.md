@@ -1,8 +1,10 @@
-# personal_website
-If you are seeing this the website is under construction.
+# Personal Website
 
+This website can be viewed at...
 
+https://benbraniff.github.io/
 
+The aim of this website is to be a hub of links for the user to be redirected to, namely my Resume and my Github.
 
-npm init react-app my-app1 --template typescript --force
-npm install gh-pages --save-dev
+## Home Page
+![home page](/Media/home-page-1.png)
